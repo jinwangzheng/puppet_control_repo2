@@ -3,4 +3,6 @@ node default {
     ensure => file,
     content => 'This is a readme created on puppet agent by puppet',
   }
+  file { '/root/test':
+  }
 }
