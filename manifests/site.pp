@@ -7,3 +7,7 @@ node default {
   ensure => directory,
   }
 }
+
+node 'master.puppet.vm' {
+  include role::puppet_master_server
+}
