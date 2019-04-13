@@ -29,3 +29,20 @@ class myuser(
 class { 'myuser':
 username => 'brook2',
 }
+
+
+define myuser(
+   $username = 'brook'
+){
+  user{$username:
+     ensure => present, 
+  }
+}
+
+myuser{'titleforbrook3':
+  username => 'brook3',
+}
+
+myuser{'titleforbrook4'
+  username => 'brook4',
+}
