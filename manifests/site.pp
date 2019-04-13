@@ -43,6 +43,6 @@ myuser{'titleforbrook3':
   username => 'brook3',
 }
 
-myuser{'titleforbrook4'
+myuser{'titleforbrook4':
   username => 'brook4',
 }
