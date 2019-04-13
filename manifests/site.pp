@@ -23,7 +23,7 @@ class myuser(
   }
 }
 
-include myuser
+
 
 
 class { 'myuser':
