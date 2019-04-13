@@ -1,5 +1,5 @@
 class profile::agent_nodes {
-docker::run { 'web.puppet.vm':
-  ensure => absent,
-}
+  docker::run { 'web.puppet.vm':
+    ensure => absent,
+  }
 }
