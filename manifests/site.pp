@@ -11,3 +11,16 @@ node default {
 node 'master.puppet.vm' {
   include role::puppet_master_server
 }
+
+
+
+
+class myuser(
+  $username => 'brook'
+){
+  user{$username:
+  ensure => present, 
+}
+}
+
+include myuser
