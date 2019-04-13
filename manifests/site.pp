@@ -24,3 +24,8 @@ class myuser(
 }
 
 include myuser
+
+
+class { ‘myuser':
+username => 'brook2',
+}
