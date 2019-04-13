@@ -26,6 +26,6 @@ class myuser(
 include myuser
 
 
-class { ‘myuser':
+class { 'myuser':
 username => 'brook2',
 }
