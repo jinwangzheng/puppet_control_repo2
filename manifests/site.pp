@@ -15,20 +15,6 @@ node 'master.puppet.vm' {
 
 
 
-class myuser(
-  $username = 'brook'
-){
-  user{$username:
-    ensure => present, 
-  }
-}
-
-
-
-
-class { 'myuser':
-username => 'brook2',
-}
 
 
 define myuser(
