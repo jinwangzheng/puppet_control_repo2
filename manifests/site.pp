@@ -16,11 +16,11 @@ node 'master.puppet.vm' {
 
 
 class myuser(
-  $username => 'brook'
+  username => 'brook'
 ){
   user{$username:
-  ensure => present, 
-}
+    ensure => present, 
+  }
 }
 
 include myuser
